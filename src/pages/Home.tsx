@@ -5,6 +5,7 @@ import AboutMe from "@/components/AboutMe/AboutMe"
 import MyExperience from "@/components/MyExperience/MyExperience"
 import Myskills from "@/components/MySkills/Myskills"
 import Navbar from "@/components/Navbar"
+import Projects from "@/components/Projects/Projects"
 // import TechStacks from "@/components/TechStacks"
 // import Works from "@/components/Works"
 
@@ -17,6 +18,7 @@ const Home = () => {
                 <Myskills />
                 <MyExperience />
                 <AboutMe />
+                <Projects />
                 {/* <TechStacks /> */}
                 {/* <Works /> */}
                 {/* <Experience /> */}
