@@ -10,6 +10,10 @@ import firebaseIcon from "../assets/firebase-1-logo-svg-vector.svg"
 import jwtIcon from "../assets/icon-jwt.webp"
 import reduxIcon from "../assets/redux-logo-png-transparent.png"
 import materialUiIcon from "../assets/material-ui-logo-svg-vector.svg"
+import grafanaIcon from "../assets/grafana_labs_logo.jpg"
+import clickhouseIcon from "../assets/clickhouseinc_logo.jpg"
+import kafkaIcon from "../assets/kafka_stream_logo.jpg"
+const prometheusIcon = "https://prometheus.io/_next/static/media/prometheus-logo.7aa022e5.svg"
 
 export const WORKS_DATA = [
     {
@@ -23,7 +27,7 @@ export const WORKS_DATA = [
     {
         id: 2,
         title: "Cookie-stuff",
-        description: "Cookie-Stuff is a full-stack e-commerce application built with React and Node.js, featuring JWT-based authentication, Redux Toolkit for state management, Stripe payment integration, and a scalable backend using Express and MongoDB.",
+        description: "Cookie-Stuff is a full-stack e-commerce application built with React and Node.js, featuring JWT-based authentication, Redux Toolkit for state management, Stripe payment integration, and a scalable backend using Express and MongoDB.(it will take a liitle bit time to load everything and for better view explore it on laptop or pc)",
         image: "/cookie-stuff.png",
         link: "https://cookie-stuff.vercel.app/",
         mainTechnologies: ["Redux Toolkit", "React Router v7", "Tailwind CSS", "Material UI", "Stripe Payments", "JWT Authentication", " Multer", "bcrypt"]
@@ -40,7 +44,7 @@ export const WORKS_DATA = [
         id: 4,
         title: "Event Booking System",
         description: "Event Booking System is a MERN-based application that allows users to browse and book events with real-time seat availability. It features JWT authentication, RESTful APIs, and WebSocket-powered live seat updates for a seamless booking experience.",
-        image: "/Om-kudrat.png",
+        image: "/EvBook-System.png",
         link: "https://github.com/subhashdevkar/on-kudrat.git",
         mainTechnologies: ["React Hook Form", "Zod", "Socket.io Client", "Lucide React", "Mongoose", "Socket.io", "JWT Authentication", "bcrypt", "CORS", "dotenv", "Nodemon"]
     },
@@ -48,7 +52,7 @@ export const WORKS_DATA = [
         id: 5,
         title: "SplitEx",
         description: "SplitEx is a full-stack expense and payment management application built with React and TypeScript on the frontend and Node.js on the backend, featuring JWT authentication, Stripe payments, Redis-powered background jobs, cron tasks, and a scalable MongoDB architecture.",
-        image: "/Om-kudrat.png",
+        image: "/SplitEx.png",
         link: "https://github.com/subhashdevkar/on-kudrat.git",
         mainTechnologies: ["TypeScript", "Shadcn", "Firebase", "Lucide React", "Redis", "BullMQ", "Stripe API", "JWT Authentication", "Firebase Admin", "Nodemailer", "Zod"]
     },
@@ -57,30 +61,36 @@ export const WORKS_DATA = [
 export const WORK_EXPERIENCE = [
     {
         id: 1,
+        companyLogo: "https://static.suvit.io/images/taxone/logo/s_logo.svg",
         role: "SDE Intern",
-        description: "Assisted in the development of scalable web applications using React.js and Node.js. Optimized frontend components for better performance and collaborated with the backend team to integrate RESTful APIs. Participated in code reviews and debugging sessions to ensure high-quality code standards.",
+        description: "Implemented production-grade monitoring using Grafana and Prometheus to track system performance and application metrics in real time. Worked with Kafka for event streaming and ClickHouse for high-performance log storage and analytics to monitor system behavior.Assisted in the development of scalable web applications using React.js and Node.js.",
         companyName: "Vyapar TaxOne",
         workOnTech: ["React Js", "Node Js"],
-        from: "15/11/2025",
-        to: "present"
+        from: "Nov 2025",
+        to: "Present",
+        link: "https://taxone.vyapar.com/"
     },
     {
         id: 2,
+        companyLogo: "https://bunny-wp-pullzone-dth19nafvq.b-cdn.net/wp-content/uploads/2025/01/vision-new-header-logo.svg",
         role: "MERN Stack Developer - Intern",
         description: "Built and maintained full-stack applications using the MERN stack. Designed responsive user interfaces with React and managed server-side logic using Node.js and Express. Implemented database schemas and aggregation pipelines in MongoDB to handle complex data requirements.",
         companyName: "Vision Infotech",
         workOnTech: ["React Js", "Node Js"],
-        from: "01/09/2025",
-        to: "10/11/2025"
+        from: "Sep 2025",
+        to: "Nov 2025",
+        link: "http://visioninfotech.net/"
     },
     {
         id: 3,
+        companyLogo: "/tech-vibe-infotech.jpg",
         role: "Digital Marketing Executive",
         description: "Executes strategic digital marketing campaigns focusing on SEO and social media advertising. Managed Facebook Ad campaigns to increase brand awareness and lead generation. Analyzed web traffic metrics to optimize marketing strategies and improve user engagement.",
         companyName: "Tech Vibe Infotech",
         workOnTech: ["SEO", "facebook ads"],
-        from: "01/09/2025",
-        to: "10/11/2025"
+        from: "Jan 2024",
+        to: "Dec 2024",
+        link: "https://techvibeinfotech.com/"
     }
 ]
 
@@ -145,5 +155,25 @@ export const TECH_STACKS = [
         id: 12,
         name: "javascript",
         icon: jsIcon
-    }
+    },
+    {
+        id: 13,
+        name: "Prometheus",
+        icon: prometheusIcon
+    },
+    {
+        id: 14,
+        name: "Grafana",
+        icon: grafanaIcon
+    },
+    {
+        id: 15,
+        name: "Click House",
+        icon: clickhouseIcon
+    },
+    {
+        id: 16,
+        name: "Kafka",
+        icon: kafkaIcon
+    },
 ]

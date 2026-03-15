@@ -1,21 +1,30 @@
-import { LucideApple } from "lucide-react"
+type ExperienceBoxProps = {
+    experience: {
+        id: number
+        companyLogo: string
+        role: string,
+        description: string
+        companyName: string,
+        link: string
+        from: string,
+        to: string
+    }
+}
 
-const ExperienceBox = () => {
+const ExperienceBox = ({ experience }: ExperienceBoxProps) => {
+    const even = experience.id % 2 === 0
     return (
-        <div className="space-y-7 px-6 py-8 border border-[#71717A] bg-black text-white rounded-2xl">
-            <div className="flex justify-between items-center">
+        <div className={`space-y-7 px-6 py-8 border ${even ? "bg-[#27272A]" : "bg-black"} border-[#71717A]  text-white rounded-2xl`}>
+            <div className="md:flex space-y-8 md:space-y-0 md:justify-between md:items-center">
                 <div className="flex gap-8 items-center">
-                    <LucideApple />
-                    <div className="font-semibold text-2xl">Software engineer</div>
+                    <img className="size-8 cursor-pointer" onClick={() => window.open(experience.link, "_blank")} src={experience.companyLogo} alt="" />
+                    <div className="font-semibold text-2xl">{experience.role} At {experience.companyName}</div>
                 </div>
-                <div className="text-[#D4D4D8]">nov 2019-present</div>
+                <div className="text-[#D4D4D8]">{experience.from} - {experience.to}</div>
             </div>
-            <div className="text-[#D4D4D8]">
-                As a Senior Software Engineer at Google,
-                I played a pivotal role in developing innovative solutions
-                for Google's core search algorithms. Collaborating with a dynamic team
-                of engineers, I contributed to the enhancement of search accuracy and
-                efficiency, optimizing user experiences for millions of users worldwide.
+            <div className="text-[#D4D4D8] space-y-2">
+                {/* <p className="text-lg font-bold cursor-pointer" onClick={() => window.open(experience.link, "_blank")}>{experience.companyName}</p> */}
+                <p>{experience.description}</p>
             </div>
         </div>
     )
