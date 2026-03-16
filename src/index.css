@@ -127,3 +127,7 @@
 .font-sora {
   font-family: 'Sora', sans-serif;
 }
+.text-outliner {
+  -webkit-text-stroke: 4px black;
+  color: white;
+}
