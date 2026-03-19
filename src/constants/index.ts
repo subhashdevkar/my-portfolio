@@ -13,7 +13,11 @@ import materialUiIcon from "../assets/material-ui-logo-svg-vector.svg"
 import grafanaIcon from "../assets/grafana_labs_logo.jpg"
 import clickhouseIcon from "../assets/clickhouseinc_logo.jpg"
 import kafkaIcon from "../assets/kafka_stream_logo.jpg"
-const prometheusIcon = "https://prometheus.io/_next/static/media/prometheus-logo.7aa022e5.svg"
+export const prometheusIcon = "https://prometheus.io/_next/static/media/prometheus-logo.7aa022e5.svg"
+export const LINKEDIN_URL = "https://www.linkedin.com/in/subhash-devkar-full-stack-developer"
+export const TWITTER_URL = "https://x.com/subhashdevkar23"
+export const GITHUB_URL = "https://github.com/subhashdevkar"
+
 
 export const WORKS_DATA = [
     {
