@@ -66,7 +66,7 @@ export const WORK_EXPERIENCE = [
     {
         id: 1,
         companyLogo: "https://static.suvit.io/images/taxone/logo/s_logo.svg",
-        role: "SDE Intern",
+        role: "SDE",
         description: "Implemented production-grade monitoring using Grafana and Prometheus to track system performance and application metrics in real time. Worked with Kafka for event streaming and ClickHouse for high-performance log storage and analytics to monitor system behavior.Assisted in the development of scalable web applications using React.js and Node.js.",
         companyName: "Vyapar TaxOne",
         workOnTech: ["React Js", "Node Js"],

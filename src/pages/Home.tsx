@@ -2,6 +2,7 @@
 // import Experience from "@/components/Experience"
 // import Main from "@/components/Main"
 import AboutMe from "@/components/AboutMe/AboutMe"
+import Footer from "@/components/Footer/Footer"
 import LetsConnect from "@/components/LetsConnect/LetsConnect"
 import MyExperience from "@/components/MyExperience/MyExperience"
 import Myskills from "@/components/MySkills/Myskills"
@@ -21,6 +22,7 @@ const Home = () => {
                 <AboutMe />
                 <Projects />
                 <LetsConnect />
+                <Footer />
                 {/* <TechStacks /> */}
                 {/* <Works /> */}
                 {/* <Experience /> */}

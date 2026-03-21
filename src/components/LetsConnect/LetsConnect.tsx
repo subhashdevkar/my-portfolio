@@ -4,6 +4,8 @@ import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useState } from "react"
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 
 const LetsConnect = () => {
@@ -28,13 +30,14 @@ const LetsConnect = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         validateAndSetErrors()
+
         console.log(name, email, website, message)
-        // TODO: if validation passes, you can send the form data to your backend here.
+        emailjs.send(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_ID, { name, email, website, message }, import.meta.env.VITE_EMAIL_PUBLIC_KEY).then(() => toast.success("Thank you! I will get back to you soon.")).catch(() => toast.error("Something went wrong, try again"))
     }
 
     return (
-        <div className="py-[60px] px-20 flex flex-col md:gap-24 md:flex-row md:justify-between">
-            <div className="space-y-5">
+        <div className="lg:py-[60px] lg:px-20 sm:px-7 flex flex-col gap-5 xl:gap-24 md:flex-row md:justify-between">
+            <div className="space-y-5 sm:w-1/2">
                 <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-2">
                         <Input
@@ -73,7 +76,7 @@ const LetsConnect = () => {
                         />
                         {errors.message && <p className="text-sm text-red-500">{errors.message}</p>}
                     </div>
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-0.5 lg:gap-6">
                         <Button className="text-xl font-extrabold p-6" type="submit">
                             Get In Touch
                         </Button>
@@ -115,7 +118,7 @@ const LetsConnect = () => {
                     </Button>
                 </div> */}
             </div>
-            <div className="space-y-10">
+            <div className="space-y-5 sm:space-y-10 sm:w-1/2">
                 <div className="space-y-5">
                     <div className="text-5xl font-extrabold">
                         Let's <span className="">talk</span> for <br />
@@ -125,7 +128,7 @@ const LetsConnect = () => {
                         and memorable interactive experiences.
                     </p>
                 </div>
-                <p className="text-3xl font-semibold">subhashsdevkar@gmail.com</p>
+                <p className="text-xl lg:text-3xl font-semibold">subhashsdevkar@gmail.com</p>
             </div>
         </div>
     )
