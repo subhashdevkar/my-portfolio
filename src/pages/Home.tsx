@@ -3,6 +3,7 @@
 // import Main from "@/components/Main"
 import AboutMe from "@/components/AboutMe/AboutMe"
 import Footer from "@/components/Footer/Footer"
+import HeroSection from "@/components/HeroSection/HeroSection"
 import LetsConnect from "@/components/LetsConnect/LetsConnect"
 import MyExperience from "@/components/MyExperience/MyExperience"
 import Myskills from "@/components/MySkills/Myskills"
@@ -17,6 +18,7 @@ const Home = () => {
             <Navbar />
             <div className="container mx-auto">
                 {/* <Main /> */}
+                <HeroSection />
                 <Myskills />
                 <MyExperience />
                 <AboutMe />
