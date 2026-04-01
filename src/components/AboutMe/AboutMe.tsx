@@ -2,7 +2,7 @@ import aboutMeBoy from "../../assets/about-me-boy.png"
 import HeaderTitle from "../HeaderTitle"
 const AboutMe = () => {
     return (
-        <div className="sm:px-20 py-[60px] grid lg:grid-cols-2 sm:gap-20 gap-5 place-items-center grid-cols-1">
+        <div id="about" className="sm:px-20 py-[60px] grid lg:grid-cols-2 sm:gap-20 gap-5 place-items-center grid-cols-1 scroll-mt-20">
             <div>
                 <img src={aboutMeBoy} alt="" />
             </div>

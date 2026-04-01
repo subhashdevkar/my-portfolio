@@ -4,8 +4,8 @@ import SkillBox from "./SkillBox"
 
 const Myskills = () => {
     return (
-        <div className="space-y-16">
-            <HeaderTitle title="My" boldTitle="Skills" />
+        <div id="skills" className="space-y-16 scroll-mt-20">
+            <HeaderTitle title="My" boldTitle="Skills" bgBlack={false} />
             <div className="flex flex-wrap justify-center gap-x-20 gap-y-10">
                 {TECH_STACKS.map((s) => (
                     <SkillBox key={s.id} icon={s.icon} title={s.name} />

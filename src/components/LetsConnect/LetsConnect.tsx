@@ -6,6 +6,8 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { useState } from "react"
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
 
 
 const LetsConnect = () => {
@@ -36,7 +38,7 @@ const LetsConnect = () => {
     }
 
     return (
-        <div className="lg:py-[60px] lg:px-20 sm:px-7 flex flex-col gap-5 xl:gap-24 md:flex-row md:justify-between">
+        <div id="contact" className="lg:py-[60px] lg:px-20 sm:px-7 flex flex-col gap-5 xl:gap-24 md:flex-row md:justify-between scroll-mt-20">
             <div className="space-y-5 sm:w-1/2">
                 <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-2">
@@ -77,24 +79,29 @@ const LetsConnect = () => {
                         {errors.message && <p className="text-sm text-red-500">{errors.message}</p>}
                     </div>
                     <div className="flex flex-wrap items-center gap-2 sm:gap-0.5 lg:gap-6">
-                        <Button className="text-xl font-extrabold p-6" type="submit">
+                        <Button className="text-xl font-extrabold border border-black p-6 bg-white text-black hover:bg-black hover:text-white" type="submit">
                             Get In Touch
                         </Button>
                         <Button
-                            className="p-6"
+                            type="button"
+                            className="group p-6 bg-white hover:bg-black active:bg-black border border-black text-black hover:text-white"
                             onClick={() => window.open(LINKEDIN_URL, "_blank", "noopener,noreferrer")}
                         >
-                            <FaLinkedin className="mx-1" />
+                            <FaLinkedinIn className="mx-1 size-5 text-current transition-colors" />
                         </Button>
-                        <Button className="p-6"
+                        <Button
+                            type="button"
+                            className="group p-6 bg-white hover:bg-black active:bg-black border border-black text-black hover:text-white"
                             onClick={() => window.open(TWITTER_URL, "_blank", "noopener,noreferrer")}
                         >
-                            <FaTwitter className="mx-1" />
+                            <FaTwitter className="mx-1 size-5 text-current transition-colors" />
                         </Button>
-                        <Button className="p-6"
+                        <Button
+                            type="button"
+                            className="group p-6 bg-white hover:bg-black active:bg-black border border-black text-black hover:text-white"
                             onClick={() => window.open(GITHUB_URL, "_blank", "noopener,noreferrer")}
                         >
-                            <FaGithub className="mx-1" />
+                            <FiGithub className="mx-1 size-5 text-current transition-colors" />
                         </Button>
                     </div>
                 </form>

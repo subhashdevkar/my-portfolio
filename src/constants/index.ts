@@ -18,6 +18,8 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/subhash-devkar-full-sta
 export const TWITTER_URL = "https://x.com/subhashdevkar23"
 export const GITHUB_URL = "https://github.com/subhashdevkar"
 
+/** Place your PDF in `public/resume.pdf` (or update this path). */
+export const RESUME_URL = "/resume.pdf"
 
 export const WORKS_DATA = [
     {
