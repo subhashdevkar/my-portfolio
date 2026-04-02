@@ -4,7 +4,7 @@ import ExperienceBox from "./ExperienceBox"
 
 const MyExperience = () => {
     return (
-        <div className="space-y-16 bg-black py-[60px] sm:px-20 px-2.5">
+        <div className="space-y-16 bg-black py-[40px] px-[16px] lg:py-[60px] lg:px-[80px]">
             <HeaderTitle bgBlack={true} title="My" boldTitle="Experience" />
             <div className="space-y-8">
                 {WORK_EXPERIENCE.map((e, i) => (

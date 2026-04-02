@@ -2,7 +2,7 @@ import { GITHUB_URL, LINKEDIN_URL, TWITTER_URL } from "@/constants";
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { useState } from "react"
 import emailjs from "@emailjs/browser";
 import { toast } from "sonner";
@@ -38,7 +38,7 @@ const LetsConnect = () => {
     }
 
     return (
-        <div id="contact" className="lg:py-[60px] lg:px-20 sm:px-7 flex flex-col gap-5 xl:gap-24 md:flex-row md:justify-between scroll-mt-20">
+        <div id="contact" className="flex flex-col gap-5 py-[40px] px-[16px] md:flex-row md:justify-between lg:py-[60px] lg:px-[80px] xl:gap-24 scroll-mt-20">
             <div className="space-y-5 sm:w-1/2">
                 <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-2">

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
-import { Menu, X } from "lucide-react"
+import { X } from "lucide-react"
+import { IoMenu } from "react-icons/io5";
+
 
 import { RESUME_URL } from "@/constants"
 import { cn } from "@/lib/utils"
@@ -71,14 +73,14 @@ const Navbar = () => {
             variant="ghost"
             size="icon"
             className={cn(
-              "shrink-0 border border-black bg-white text-black hover:bg-black hover:text-white md:hidden"
+              "shrink-0 bg-white text-black hover:bg-black hover:text-white md:hidden"
             )}
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            {open ? <X className="size-5" /> : <IoMenu className="size-8" />}
           </Button>
         </div>
       </div>

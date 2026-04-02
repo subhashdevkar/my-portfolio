@@ -4,11 +4,13 @@ type SkillBoxProp = {
 }
 const SkillBox = ({ icon, title }: SkillBoxProp) => {
     return (
-        <div className="size-44 border-2 border-black rounded-2xl flex flex-col justify-center items-center gap-8">
-            <div className="size-14">
-                <img src={icon} className="mx-auto" alt={title} />
+        <div className="flex aspect-square w-full max-w-44 flex-col items-center justify-center gap-3 rounded-2xl border-2 border-black p-2 sm:gap-6 sm:p-3">
+            <div className="size-10 shrink-0 sm:size-14">
+                <img src={icon} className="mx-auto max-h-full w-auto object-contain" alt={title} />
             </div>
-            <div className="text-xl font-bold">{title}</div>
+            <div className="line-clamp-2 text-center text-xs font-bold leading-tight sm:text-base md:text-xl">
+                {title}
+            </div>
         </div>
     )
 }

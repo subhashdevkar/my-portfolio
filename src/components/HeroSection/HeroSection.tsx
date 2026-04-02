@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { Button } from "../ui/button"
 const HeroSection = () => {
     return (
-        <div id="home" className="flex flex-col-reverse gap-12 md:gap-0 lg:gap-0 px-4 py-10 md:flex-row md:px-8 md:py-8 xl:px-20 xl:py-15 scroll-mt-20">
+        <div id="home" className="flex flex-col-reverse gap-12 py-[40px] px-[16px] md:gap-0 md:flex-row lg:gap-0 lg:py-[60px] lg:px-[80px] scroll-mt-20">
             <div className="md:w-1/2">
                 <div>
                     <h1 className="text-2xl lg:text-4xl leading-relaxed">
