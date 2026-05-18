@@ -1,11 +1,14 @@
+import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
+import WannaKnowMore from "./pages/WannaKnowMore"
 
 const App = () => {
   return (
 
-    <div className="font-sora container mx-auto max-w-7xl xl:px-0 sm:px-4 px-2.5">
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/wanna-know-more" element={<WannaKnowMore />} />
+    </Routes>
   )
 }
 

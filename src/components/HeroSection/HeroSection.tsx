@@ -28,7 +28,7 @@ const HeroSection = () => {
     return (
         <div
             id="home"
-            className="flex flex-col-reverse gap-12 py-[40px] px-[16px] md:gap-0 md:flex-row lg:gap-0 lg:py-[60px] lg:px-[80px] scroll-mt-20"
+            className="flex flex-col-reverse gap-12 py-[40px] px-[16px] md:gap-0 md:flex-row lg:gap-0 lg:py-[60px] lg:px-[80px] scroll-mt-20 border-2 border-b-none border-black shadow-xl"
         >
             <div className="md:w-1/2">
                 <div>
@@ -37,7 +37,7 @@ const HeroSection = () => {
                         <span className="font-extrabold">Subhash Devkar.</span>
                         <br />
                         <span
-                            className="font-extrabold block  max-w-full"
+                            className="font-extrabold block transition-opacity duration-500"
                             aria-live="polite"
                             aria-atomic="true"
                         >
@@ -55,7 +55,7 @@ const HeroSection = () => {
                     </h2>
                     <div className="flex gap-8 mt-6 xl:mt-18">
                         <Button
-                            className="group p-6 bg-white hover:bg-black active:bg-black border border-black text-black hover:text-white"
+                            className="group p-6 bg-white transition-transform duration-200 hover:scale-105 active:scale-100 hover:bg-black active:bg-black border border-black text-black hover:text-white"
                             onClick={() =>
                                 window.open(LINKEDIN_URL, '_blank', 'noopener,noreferrer')
                             }
@@ -63,7 +63,7 @@ const HeroSection = () => {
                             <FaLinkedinIn className="size-5 mx-1 text-current transition-colors" />
                         </Button>
                         <Button
-                            className="group p-6 bg-white hover:bg-black active:bg-black border border-black text-black hover:text-white"
+                            className="group p-6 bg-white transition-transform duration-200 hover:scale-105 active:scale-100 hover:bg-black active:bg-black border border-black text-black hover:text-white"
                             onClick={() =>
                                 window.open(TWITTER_URL, '_blank', 'noopener,noreferrer')
                             }
@@ -71,7 +71,7 @@ const HeroSection = () => {
                             <FaTwitter className="size-5 mx-1 text-current transition-colors" />
                         </Button>
                         <Button
-                            className="group p-6 bg-white hover:bg-black active:bg-black border border-black text-black hover:text-white"
+                            className="group p-6 bg-white transition-transform duration-200 hover:scale-105 active:scale-100 hover:bg-black active:bg-black border border-black text-black hover:text-white"
                             onClick={() =>
                                 window.open(GITHUB_URL, '_blank', 'noopener,noreferrer')
                             }
@@ -81,12 +81,14 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="md:w-1/2 flex items-center">
-                <img
-                    src={HeroImage}
-                    className="border-b-2 border-black sm:border-none"
-                    alt=""
-                />
+            <div className="md:w-1/2 flex items-center justify-center">
+                <div className="overflow-hidden sm:border-none border-b-2 border-black">
+                    <img
+                        src={HeroImage}
+                        className="block max-h-[min(70vh,520px)] w-full object-cover object-top"
+                        alt=""
+                    />
+                </div>
             </div>
         </div>
     )

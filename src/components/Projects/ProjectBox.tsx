@@ -13,12 +13,12 @@ const ProjectBox = ({ project }: ProjectBoxProps) => {
 
     return (
         <div
-            className={`flex flex-col sm:flex-row ${isEven ? "sm:flex-row-reverse" : ""} justify-between items-center gap-4 sm:gap-20 py-5`}
+            className={`group flex flex-col sm:flex-row ${isEven ? "sm:flex-row-reverse" : ""} justify-between items-center gap-4 sm:gap-20 py-5 transition-opacity duration-300`}
         >
             {/* Image first for mobile; order alternates on larger screens via flex-row / flex-row-reverse */}
             <div className="sm:w-1/2">
                 <img
-                    className="w-[343px] h-[397.73px] my-10 rounded-4xl sm:w-[530px]"
+                    className="my-10 h-[397.73px] w-[343px] rounded-4xl object-cover transition-[transform,box-shadow] duration-500 ease-out motion-safe:group-hover:scale-[1.02] motion-safe:group-hover:shadow-2xl motion-safe:group-hover:shadow-black/30 sm:w-[530px]"
                     src={project.image}
                     alt=""
                 />
@@ -32,7 +32,7 @@ const ProjectBox = ({ project }: ProjectBoxProps) => {
                     <p className="text-[#71717A]">{project.description}</p>
                     <LucideExternalLink
                         onClick={() => window.open(project.link, "_blank")}
-                        className="cursor-pointer"
+                        className="cursor-pointer transition-transform duration-200 motion-safe:hover:scale-110 motion-safe:hover:text-white"
                     />
                 </div>
             </div>

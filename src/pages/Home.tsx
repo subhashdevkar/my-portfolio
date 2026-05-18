@@ -10,23 +10,38 @@ import MyExperience from "@/components/MyExperience/MyExperience"
 import Myskills from "@/components/MySkills/Myskills"
 import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects/Projects"
+import { SectionReveal } from "@/components/SectionReveal"
 // import TechStacks from "@/components/TechStacks"
 // import Works from "@/components/Works"
 
 const Home = () => {
     return (
-        <div className="min-h-screen bg-background">
+        <div className=" font-sora container mx-auto max-w-7xl xl:px-0 sm:px-4 px-2.5 min-h-screen bg-background">
             <Navbar />
             <div className="container mx-auto">
                 {/* <Main /> */}
-                <HeroSection />
-                <Myskills />
-                <MyExperience />
-                <AboutMe />
-                {/* <BooksSection /> */}
-                <Projects />
-                <LetsConnect />
-                <Footer />
+                <SectionReveal>
+                    <HeroSection />
+                </SectionReveal>
+                <SectionReveal delayMs={60}>
+                    <Myskills />
+                </SectionReveal>
+                <SectionReveal delayMs={60}>
+                    <MyExperience />
+                </SectionReveal>
+                <SectionReveal delayMs={60}>
+                    <AboutMe />
+                </SectionReveal>
+                {/* <SectionReveal delayMs={60}><BooksSection /></SectionReveal> */}
+                <SectionReveal delayMs={60}>
+                    <Projects />
+                </SectionReveal>
+                <SectionReveal delayMs={60}>
+                    <LetsConnect />
+                </SectionReveal>
+                <SectionReveal delayMs={60}>
+                    <Footer />
+                </SectionReveal>
                 {/* <TechStacks /> */}
                 {/* <Works /> */}
                 {/* <Experience /> */}

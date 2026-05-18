@@ -14,7 +14,7 @@ type ExperienceBoxProps = {
 const ExperienceBox = ({ experience }: ExperienceBoxProps) => {
     const even = experience.id % 2 === 0
     return (
-        <div className={`space-y-7 px-6 py-8 border ${even ? "bg-[#27272A]" : "bg-black"} border-[#71717A]  text-white rounded-2xl`}>
+        <div className={`space-y-7 px-6 py-8 border transition-[transform,box-shadow] duration-300 ease-out motion-safe:hover:-translate-y-0.5 motion-safe:hover:shadow-xl motion-safe:hover:shadow-black/20 ${even ? "bg-[#27272A]" : "bg-black"} border-[#71717A] text-white rounded-2xl`}>
             <div className="md:flex space-y-8 md:space-y-0 md:justify-between md:items-center">
                 <div className="flex gap-8 items-center">
                     <img className="size-8 cursor-pointer" onClick={() => window.open(experience.link, "_blank")} src={experience.companyLogo} alt="" />

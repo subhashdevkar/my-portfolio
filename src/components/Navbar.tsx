@@ -31,18 +31,18 @@ const Navbar = () => {
   }, [open])
 
   const linkClass =
-    "text-sm font-medium text-foreground transition-colors hover:text-black md:text-[15px]"
+    "text-sm font-medium text-foreground transition-colors duration-200 hover:text-black md:text-[15px]"
 
   return (
     <nav
-      className="sticky top-0 z-50 w-full border-b-2 border-black bg-background/95 backdrop-blur-sm supports-backdrop-filter:bg-background/85"
+      className="animate-in px-[16px] py-5 lg:px-[80px] fade-in slide-in-from-top-3 fill-mode-both duration-500 motion-reduce:animate-none sticky top-0 z-50 w-full bg-background/95 shadow-[0_1px_0_0_rgba(0,0,0,0.04)] backdrop-blur-sm supports-backdrop-filter:bg-background/85"
       aria-label="Main navigation"
     >
       <div className="container mx-auto grid h-14 max-w-7xl grid-cols-2 items-center gap-2 px-2.5 sm:h-16 sm:px-4 md:grid-cols-[1fr_auto_1fr] md:gap-3 xl:px-0">
         <div className="flex min-w-0 justify-start">
           <a
             href="#home"
-            className="truncate text-lg font-normal text-foreground sm:text-xl"
+            className="text-lg font-normal text-foreground sm:text-xl"
             onClick={() => setOpen(false)}
           >
             <span>Subhash </span>
@@ -98,7 +98,7 @@ const Navbar = () => {
             <a
               key={href}
               href={href}
-              className="rounded-md px-3 py-3 text-base font-medium text-foreground hover:bg-muted"
+              className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors duration-200 hover:bg-muted"
               onClick={() => setOpen(false)}
             >
               {label}
