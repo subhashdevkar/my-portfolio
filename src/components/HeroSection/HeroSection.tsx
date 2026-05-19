@@ -14,9 +14,51 @@ const HERO_ROLES = [
 ] as const
 
 const ROLE_ROTATE_MS = 2800
+const ROLE_SLOT_CLASS =
+    'flex min-h-[2.75rem] shrink-0 items-center whitespace-nowrap leading-tight sm:min-h-[3.25rem] lg:min-h-[3.75rem]'
+
+function RotatingRoles({
+    activeIndex,
+    reduceMotion,
+}: {
+    activeIndex: number
+    reduceMotion: boolean
+}) {
+    const stepPercent = 100 / HERO_ROLES.length
+
+    return (
+        <span
+            className="inline-block max-w-full align-bottom font-extrabold"
+            aria-live="polite"
+            aria-atomic="true"
+        >
+            <span className="relative block h-[2.75rem] overflow-hidden sm:h-[3.25rem] lg:h-[3.75rem] [perspective:500px]">
+                <span
+                    className={
+                        reduceMotion
+                            ? 'flex flex-col'
+                            : 'flex flex-col transition-transform duration-700 ease-[cubic-bezier(0.65,0,0.35,1)] motion-reduce:transition-none'
+                    }
+                    style={{
+                        transform: `translate3d(0, -${activeIndex * stepPercent}%, 0)`,
+                    }}
+                >
+                    {HERO_ROLES.map((role) => (
+                        <span key={role} className={ROLE_SLOT_CLASS}>
+                            {role}
+                        </span>
+                    ))}
+                </span>
+            </span>
+        </span>
+    )
+}
 
 const HeroSection = () => {
     const [roleIndex, setRoleIndex] = useState(0)
+    const reduceMotion =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
     useEffect(() => {
         const id = window.setInterval(() => {
@@ -36,13 +78,11 @@ const HeroSection = () => {
                         <span>Hello I'am </span>
                         <span className="font-extrabold">Subhash Devkar.</span>
                         <br />
-                        <span
-                            className="font-extrabold block transition-opacity duration-500"
-                            aria-live="polite"
-                            aria-atomic="true"
-                        >
-                            {HERO_ROLES[roleIndex]}
-                        </span>
+                        <RotatingRoles
+                            activeIndex={roleIndex}
+                            reduceMotion={reduceMotion}
+                        />
+                        <br />
                         <span>Based In </span>
                         <span className="font-extrabold">India.</span>
                     </h1>
