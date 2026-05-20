@@ -24,14 +24,35 @@ export const GITHUB_URL = 'https://github.com/subhashdevkar'
 export const RESUME_URL = '/subhash-devkar-mern-stack-developer.pdf'
 
 export const WORKS_DATA = [
+    // {
+    //     id: 1,
+    //     title: 'Tik Tok Toe Game',
+    //     description:
+    //         'Tic-Tac-Toe is a classic React-based game with a clean, responsive UI built using Bootstrap. It includes move history navigation, win/draw detection, and state management using React hooks, following a modular and reusable component structure.',
+    //     image: '/tik-tok-toe-game.png',
+    //     link: 'https://tic-tac-toe-self-tau.vercel.app/',
+    //     mainTechnologies: ['React.js', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
+    // },
     {
         id: 1,
-        title: 'Tik Tok Toe Game',
+        title: 'SplitEx',
         description:
-            'Tic-Tac-Toe is a classic React-based game with a clean, responsive UI built using Bootstrap. It includes move history navigation, win/draw detection, and state management using React hooks, following a modular and reusable component structure.',
-        image: '/tik-tok-toe-game.png',
-        link: 'https://tic-tac-toe-self-tau.vercel.app/',
-        mainTechnologies: ['React.js', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
+            'SplitEx is a full-stack expense and payment management application built with React and TypeScript on the frontend and Node.js on the backend, featuring JWT authentication, Stripe payments, Redis-powered background jobs, cron tasks, and a scalable MongoDB architecture.',
+        image: '/SplitEx.png',
+        link: 'https://github.com/subhashdevkar/on-kudrat.git',
+        mainTechnologies: [
+            'TypeScript',
+            'Shadcn',
+            'Firebase',
+            'Lucide React',
+            'Redis',
+            'BullMQ',
+            'Stripe API',
+            'JWT Authentication',
+            'Firebase Admin',
+            'Nodemailer',
+            'Zod',
+        ],
     },
     {
         id: 2,
@@ -53,6 +74,27 @@ export const WORKS_DATA = [
     },
     {
         id: 3,
+        title: 'Event Booking System',
+        description:
+            'Event Booking System is a MERN-based application that allows users to browse and book events with real-time seat availability. It features JWT authentication, RESTful APIs, and WebSocket-powered live seat updates for a seamless booking experience.',
+        image: '/EvBook-System.png',
+        link: 'https://github.com/subhashdevkar/on-kudrat.git',
+        mainTechnologies: [
+            'React Hook Form',
+            'Zod',
+            'Socket.io Client',
+            'Lucide React',
+            'Mongoose',
+            'Socket.io',
+            'JWT Authentication',
+            'bcrypt',
+            'CORS',
+            'dotenv',
+            'Nodemon',
+        ],
+    },
+    {
+        id: 4,
         title: 'Om-kudrat',
         description:
             'Om-Kudrat is a full-stack web application built with React and Node.js, offering a modern and accessible UI using Tailwind CSS and Radix UI, secure JWT authentication, file uploads, and a scalable Express and MongoDB backend.',
@@ -75,48 +117,8 @@ export const WORKS_DATA = [
             'Nodemailer',
         ],
     },
-    {
-        id: 4,
-        title: 'Event Booking System',
-        description:
-            'Event Booking System is a MERN-based application that allows users to browse and book events with real-time seat availability. It features JWT authentication, RESTful APIs, and WebSocket-powered live seat updates for a seamless booking experience.',
-        image: '/EvBook-System.png',
-        link: 'https://github.com/subhashdevkar/on-kudrat.git',
-        mainTechnologies: [
-            'React Hook Form',
-            'Zod',
-            'Socket.io Client',
-            'Lucide React',
-            'Mongoose',
-            'Socket.io',
-            'JWT Authentication',
-            'bcrypt',
-            'CORS',
-            'dotenv',
-            'Nodemon',
-        ],
-    },
-    {
-        id: 5,
-        title: 'SplitEx',
-        description:
-            'SplitEx is a full-stack expense and payment management application built with React and TypeScript on the frontend and Node.js on the backend, featuring JWT authentication, Stripe payments, Redis-powered background jobs, cron tasks, and a scalable MongoDB architecture.',
-        image: '/SplitEx.png',
-        link: 'https://github.com/subhashdevkar/on-kudrat.git',
-        mainTechnologies: [
-            'TypeScript',
-            'Shadcn',
-            'Firebase',
-            'Lucide React',
-            'Redis',
-            'BullMQ',
-            'Stripe API',
-            'JWT Authentication',
-            'Firebase Admin',
-            'Nodemailer',
-            'Zod',
-        ],
-    },
+
+
 ]
 
 export const WORK_EXPERIENCE = [

@@ -87,7 +87,7 @@ const HeroSection = () => {
                         <span className="font-extrabold">India.</span>
                     </h1>
                     <h2 className="text-[#71717A] mt-4 xl:mt-8 text-sm lg:text-base">
-                        I’m a MERN stack developer passionate about building modern and
+                        I’m a software engineer passionate about building modern and
                         scalable web applications. I focus on writing clean, maintainable
                         code and creating seamless user experiences. I’m constantly learning
                         and pushing myself to improve, with the goal of building

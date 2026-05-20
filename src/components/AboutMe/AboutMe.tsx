@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <HeaderTitle bgBlack={false} boldTitle="Me" title="About" />
                 <div className="space-y-4">
                     <p>
-                        I’m a passionate and self-driven MERN stack developer who enjoys
+                        I’m a passionate and self-driven software engineer who enjoys
                         building full-stack web applications using modern technologies like
                         React.js, Node.js, Express, and MongoDB. I focus on creating clean,
                         scalable, and user-friendly solutions while paying attention to
@@ -31,9 +31,9 @@ const AboutMe = () => {
                     </p>
                     <p>
                         When I’m not coding, I spend time learning new technologies,
-                        improving my problem-solving skills, or exploring ideas that can be
+                        improving my problem-solving skills,reading books or exploring ideas that can be
                         turned into real-world applications. I believe in continuous growth
-                        and pushing myself every day to become a better developer.
+                        and pushing myself every day to become a better software engineer.
                     </p>
                 </div>
             </div>
