@@ -125,10 +125,10 @@ export const WORK_EXPERIENCE = [
     {
         id: 1,
         companyLogo: 'https://static.suvit.io/images/taxone/logo/s_logo.svg',
-        role: 'SDE',
+        role: 'Software Engineer',
         description:
             "Designed and implemented production-grade monitoring and observability solutions using Grafana and Prometheus to track real-time system health and application metrics. Developed an automated CSAT feedback workflow that collected customer ratings after support calls, helping measure agent performance, reduce churn, and improve customer support quality through data-driven training insights.",
-        companyName: 'Vyapar TaxOne',
+        companyName: 'Vyapar',
         workOnTech: ['React Js', 'Node Js'],
         from: 'Nov 2025',
         to: 'Present',

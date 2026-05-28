@@ -31,7 +31,7 @@ const AboutMe = () => {
                     </p>
                     <p>
                         When I’m not coding, I spend time learning new technologies,
-                        improving my problem-solving skills,reading books or exploring ideas that can be
+                        improving my problem-solving skills, reading books and exploring ideas that can be
                         turned into real-world applications. I believe in continuous growth
                         and pushing myself every day to become a better software engineer.
                     </p>
